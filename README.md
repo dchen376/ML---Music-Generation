@@ -6,5 +6,5 @@ https://github.com/Jakobovski/free-spoken-digit-dataset
 The analysis.py is using MNIST (Modified National Institute of Standards and Tehchnology) as a dataset for pre-analysis purpose; dataset of handwritten digits.
 
 # Youtube reference
-I used this Youtube list as a reference while advancing my implementation for music generation:
+Youtube tutorials on music generation:
 https://youtube.com/playlist?list=PL-wATfeyAMNpEyENTc-tVH5tfLGKtSWPp&si=53DtJN6I_OKJFAr-
