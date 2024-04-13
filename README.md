@@ -21,4 +21,5 @@ step 0 - Understand vanilla autoencoder which consists of both an encoder and a 
   - plot the testing results
 
 step 1 - Implement Variational Autoencoder (VAE)
-  - understand the advantage of a Variational Autoencoder
+  - modify encoder component
+  - modify loss function
