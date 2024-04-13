@@ -12,7 +12,7 @@ https://youtube.com/playlist?list=PL-wATfeyAMNpEyENTc-tVH5tfLGKtSWPp&si=53DtJN6I
 
 
 # Steps to follow in this project
-step 0 - to understand vanilla autoencoder which consists of both an encoder and a decoder.
+step 0 - Understand vanilla autoencoder which consists of both an encoder and a decoder.
   - build an encoder
   - build a decoder
   - combine and make the autoencoder
@@ -20,5 +20,5 @@ step 0 - to understand vanilla autoencoder which consists of both an encoder and
   - test the autoencoder with mnist dataset
   - plot the testing results
 
-step 1 - implement Variational Autoencoder (VAE)
+step 1 - Implement Variational Autoencoder (VAE)
   - understand the advantage of a Variational Autoencoder
