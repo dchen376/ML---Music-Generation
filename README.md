@@ -11,7 +11,7 @@ https://youtube.com/playlist?list=PL-wATfeyAMNpEyENTc-tVH5tfLGKtSWPp&si=53DtJN6I
 
 
 
-# Steps in the project
+# Steps to follow in this project
 step 0 - to understand vanilla autoencoder which consists of both an encoder and a decoder.
   - build an encoder
   - build a decoder
