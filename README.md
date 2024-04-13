@@ -19,3 +19,6 @@ step 0 - to understand vanilla autoencoder which consists of both an encoder and
   - train the autoencoder
   - test the autoencoder with mnist dataset
   - plot the testing results
+
+step 1 - implement Variational Autoencoder (VAE)
+  - understand the advantage of a Variational Autoencoder
