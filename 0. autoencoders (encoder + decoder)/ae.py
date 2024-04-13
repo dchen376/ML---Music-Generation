@@ -8,7 +8,6 @@ class Autoencoder:
     Autoencoder represents a deep convolutional autoencoder architecture 
      with mirrored encoder and decoder component.
     """
-
     def __init__(self,
                  input_shape, #[28, 28, 1] height, width, channels 
                  conv_filters, # Number of filters for each layer [2, 4, 8]
@@ -31,10 +30,13 @@ class Autoencoder:
 
         self._build() # method; for building and running the class.
 
+    def summary(self):
+        self.encoder.summary() #it's a bult-in method in tensorflow.
+
     def _build(self):
         self._build_encoder()
-        self._build_decoder()
-        self._build_autoencoder()
+        # self._build_decoder()
+        # self._build_autoencoder()
 
     def _build_encoder(self):
         encoder_input = self._add_encoder_input() # methods;
@@ -81,3 +83,11 @@ class Autoencoder:
         return x
 
 
+if __name__ == "__main__":
+    autoencoder = Autoencoder(
+        input_shape = (28, 28, 1),
+        conv_filters = (32, 64, 64, 64),
+        conv_kernels = (3, 3, 3, 3),
+        conv_strides = (1, 2, 2, 1),
+        latent_space_dim=2)
+    autoencoder.summary()
