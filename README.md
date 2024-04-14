@@ -37,3 +37,7 @@ step 3 - Training a VAE with speech data in Keras
   - load Free Sound Digits Dataset (FSDD)
   - reshape the data
   - train the VAE
+
+step 4 - Sound Generation with VAE
+  - build a SoundGenerator class
+  - Implement a generate.py script
