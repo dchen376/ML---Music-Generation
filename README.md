@@ -24,6 +24,6 @@ step 1 - Implement Variational Autoencoder (VAE)
   - modify encoder component (modify the bottleneck -> z = u + sum(epsilon))
   - modify loss function: RMSE + KL (Kullback-Leibler Divergence (closed form))
   - train vae
-
+    
 step 2 - Preprocessing Audio Datasets
-  - 
+  - d
