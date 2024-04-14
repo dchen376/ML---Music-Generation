@@ -43,4 +43,5 @@ step 4 - Sound Generation with VAE
   - Implement a generate.py script
   - generate Sound from Spectrograms
 
-# how to run this Sound Generative Model
+# Run this Sound Generative Model
+  - parameters and weights of the trained model in step 3 is saved in the model folder
