@@ -34,4 +34,6 @@ step 2 - Preprocessing Audio Datasets
   - implement Saver
 
 step 3 - Training a VAE with speech data in Keras
-- a
+  - load Free Sound Digits Dataset (FSDD)
+  - reshape the data
+  - train the VAE
