@@ -10,9 +10,9 @@ from vae import VAE
 from train import SPECTROGRAMS_PATH
 
 HOP_LENGTH = 256
-SAVE_DIR_ORIGINAL = r"D:\personal projects\Music Generation\samples\SAVE_DIR_ORIGINAL"
-SAVE_DIR_GENERATED = r"D:\personal projects\Music Generation\samples\SAVE_DIR_GENERATED"
-MIN_MAX_VALUES_PATH = r"D:\personal projects\Music Generation\samples\MIN_MAX_VALUES_SAVE_DIR\min_max_values.pkl"
+SAVE_DIR_ORIGINAL = r"D:\personal projects\Music Generation\sound data\SAVE_DIR_ORIGINAL"
+SAVE_DIR_GENERATED = r"D:\personal projects\Music Generation\sound data\SAVE_DIR_GENERATED"
+MIN_MAX_VALUES_PATH = r"D:\personal projects\Music Generation\sound data\MIN_MAX_VALUES_SAVE_DIR\min_max_values.pkl"
 
 
 def load_fsdd(spectrograms_path):
