@@ -41,3 +41,4 @@ step 3 - Training a VAE with speech data in Keras
 step 4 - Sound Generation with VAE
   - build a SoundGenerator class
   - Implement a generate.py script
+  - generate Sound from Spectrograms
