@@ -143,16 +143,16 @@ class VAE:
         combined_loss = self.reconstruction_loss_weight * reconstruction_loss + kl_loss
         return combined_loss
 
-    # # MSE errors for VAE eqn.
-    # def _calculate_reconstruction_loss(self, y_target, y_predicted):
-    #     error = y_target - y_predicted
-    #     reconstruction_loss = K.mean(K.square(error), axis = [1, 2, 3]) #for squared error.
-    #     return reconstruction_loss
+    # MSE errors for VAE eqn.
+    def _calculate_reconstruction_loss(self, y_target, y_predicted):
+        error = y_target - y_predicted
+        reconstruction_loss = K.mean(K.square(error), axis = [1, 2, 3]) #for squared error.
+        return reconstruction_loss
 
-    # # cal kl loss.
-    # def _calculate_kl_loss(self, y_target, y_predicted):
-    #     kl_loss = - 0.5 * K.sum(1 + self.log_variance - K.square(self.mu) - K.exp(self.log_variance), axis = 1) # axis = 1 indicates that the sum operation should be performed along the second axis (axis with index 1) of the tensor.
-    #     return kl_loss
+    # cal kl loss.
+    def _calculate_kl_loss(self, y_target, y_predicted):
+        kl_loss = - 0.5 * K.sum(1 + self.log_variance - K.square(self.mu) - K.exp(self.log_variance), axis = 1) # axis = 1 indicates that the sum operation should be performed along the second axis (axis with index 1) of the tensor.
+        return kl_loss
 
     def _create_folder_if_it_doesnt_exist(self, folder):
         if not os.path.exists(folder):
@@ -265,15 +265,6 @@ class VAE:
         bottleneck = self._add_bottleneck(conv_layers)  # apply to bottleneck (flatten it) # a func defined later.
         self._model_input = encoder_input
         self.encoder = Model(encoder_input, bottleneck, name="encoder")  # an arbitary name: "encoder"
-
-
-
-
-
-
-
-
-
 
 
 

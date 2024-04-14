@@ -23,17 +23,17 @@ def load_mnist():
 
 
 def train(x_train, learning_rate, batch_size, epochs):
-    autoencoder = VAE(
+    vae = VAE(
         input_shape=(28, 28, 1),
         conv_filters=(32, 64, 64, 64),  # four conv layers. e.g first layer has 32 filters.
         conv_kernels=(3, 3, 3, 3),  # all four layers, each filter using/having size 3x3.
         conv_strides=(1, 2, 2, 1),  # step size.
         latent_space_dim = 2
     )
-    autoencoder.summary()
-    autoencoder.compile(learning_rate)
-    autoencoder.train(x_train, batch_size, epochs)
-    return autoencoder
+    vae.summary()
+    vae.compile(learning_rate)
+    vae.train(x_train, batch_size, epochs)
+    return vae
 
 
 """==================================================================================="""
@@ -46,10 +46,10 @@ if __name__ == "__main__":
     # autoencoder = train(x_train, LEARNING_RATE, BATCH_SIZE, EPOCHS) #implet func above.
 
     #only run 500  / 10000 samples
-    autoencoder = train(x_train[:10000], LEARNING_RATE, BATCH_SIZE, EPOCHS) #implet func above.
+    vae = train(x_train[:10000], LEARNING_RATE, BATCH_SIZE, EPOCHS) #implet func above.
 
     # save the autoencoder
-    autoencoder.save("model")
+    vae.save("model")
 
     #load the model
     # autoencoder2 = VAE.load("model")
