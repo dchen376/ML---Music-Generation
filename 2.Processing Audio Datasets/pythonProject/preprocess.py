@@ -1,6 +1,6 @@
 """
 1 - load a file
-2 - pad the signal (on if necessary)
+2 - pad the signal (only if necessary)
 3 - extracting @log spectrogram@ from signal
 4 - normalize spectrogram
 5 - save the normalized spectrogram
@@ -17,7 +17,7 @@ import librosa # Python library for music and audio analysis
 import numpy as np
 
 class Loader:
-    """Responsible for loading an audio file."""
+    """1 Responsible for loading an audio file."""
 
     def __init__(self, sample_rate, duration, mono): #mono is boolean (true/false)
         self.sample_rate = sample_rate
@@ -33,7 +33,7 @@ class Loader:
 
 
 class Padder:
-    """padder is responsible to apply padding to an arry."""
+    """2 padder is responsible to apply padding to an array."""
 
     def __init__(self, mode = "constant"):
         self.mode = mode
@@ -55,7 +55,7 @@ class Padder:
 
 
 class LogSpectrogramExtractor:
-    """LogSpectrogramExtractor extracts log spectrograms (in dB) from a
+    """3 LogSpectrogramExtractor extracts log spectrograms (in dB) from a
     time-series signal."""
 
     def __init__(self, frame_size, hop_length):
@@ -72,7 +72,7 @@ class LogSpectrogramExtractor:
         return log_spectrogram
 
 class MinMaxNormaliser:
-    """MinMaxNormaliser applies min max normalisation to an array."""
+    """4 MinMaxNormaliser applies min max normalisation to an array."""
 
     def __init__(self, min_val, max_val):
         self.min = min_val
@@ -90,7 +90,7 @@ class MinMaxNormaliser:
 
 
 class Saver:
-    """Saver is responsible to save features, and the min max values."""
+    """5 Saver is responsible to save features, and the min max values."""
     def __init__(self, feature_save_dir, min_max_values_save_dir):
         self.feature_save_dir = feature_save_dir
         self.min_max_values_save_dir = min_max_values_save_dir
@@ -194,9 +194,9 @@ if __name__ == "__main__":
     SAMPLE_RATE = 22050
     MONO = True
 
-    SPECTROGRAMS_SAVE_DIR = r"D:\personal projects\Music Generation\Processing Audio Datasets\SPECTROGRAMS_SAVE_DIR"
-    MIN_MAX_VALUES_SAVE_DIR = r"D:\personal projects\Music Generation\Processing Audio Datasets\MIN_MAX_VALUES_SAVE_DIR"
-    FILES_DIR = r"D:\personal projects\Music Generation\Processing Audio Datasets\files"
+    SPECTROGRAMS_SAVE_DIR = r"D:\personal projects\Music Generation\sound data\SPECTROGRAMS_SAVE_DIR"
+    MIN_MAX_VALUES_SAVE_DIR = r"D:\personal projects\Music Generation\sound data\MIN_MAX_VALUES_SAVE_DIR"
+    FILES_DIR = r"D:\personal projects\Music Generation\sound data\original sound files"
 
     # instantiate all objects
     loader = Loader(SAMPLE_RATE, DURATION, MONO)
