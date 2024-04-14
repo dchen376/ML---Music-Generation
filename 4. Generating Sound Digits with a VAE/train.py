@@ -8,7 +8,7 @@ BATCH_SIZE = 64
 EPOCHS = 150
 
 
-SPECTROGRAMS_PATH = r"D:\personal projects\Music Generation\sound data\SPECTROGRAMS_SAVE_DIR"
+SPECTROGRAMS_PATH = r"D:\personal projects\Music Generation\samples\SPECTROGRAMS_SAVE_DIR"
 
 
 # load the data from the spectrograms.
