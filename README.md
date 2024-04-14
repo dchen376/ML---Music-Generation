@@ -42,3 +42,5 @@ step 4 - Sound Generation with VAE
   - build a SoundGenerator class
   - Implement a generate.py script
   - generate Sound from Spectrograms
+
+# how to run this Sound Generative Model
