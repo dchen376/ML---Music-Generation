@@ -33,5 +33,5 @@ step 2 - Preprocessing Audio Datasets
   - implement the Preprocessing Pipeline
   - implement Saver
 
-step 3 - training a VAE with speech data in Keras
+step 3 - Training a VAE with speech data in Keras
 - a
