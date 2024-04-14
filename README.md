@@ -32,3 +32,6 @@ step 2 - Preprocessing Audio Datasets
   - implement MinMaxNormaliser
   - implement the Preprocessing Pipeline
   - implement Saver
+
+step 3 - training a VAE with speech data in Keras
+- a
