@@ -26,4 +26,5 @@ step 1 - Implement Variational Autoencoder (VAE)
   - train vae
     
 step 2 - Preprocessing Audio Datasets
-  - d
+  - use Free Spoken Digit Dataset (FSDD) (an audio preprocessing library)
+  - utilize librosa python library for music and audio analysis
