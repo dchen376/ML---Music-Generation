@@ -21,5 +21,6 @@ step 0 - Understand vanilla autoencoder which consists of both an encoder and a 
   - plot the testing results
 
 step 1 - Implement Variational Autoencoder (VAE)
-  - modify encoder component
-  - modify loss function
+  - modify encoder component (modify the bottleneck -> z = u + sum(epsilon))
+  - modify loss function: RMSE + KL (Kullback-Leibler Divergence (closed form))
+  - train vae
