@@ -27,4 +27,8 @@ step 1 - Implement Variational Autoencoder (VAE)
     
 step 2 - Preprocessing Audio Datasets
   - use Free Spoken Digit Dataset (FSDD) (an audio preprocessing library)
-  - utilize librosa python library for music and audio analysis -> short-time-fourier-transform
+  - implement Loader and Padder for file processing
+  - implement LogSpectrogramExtractor to preprocess audio files as spectrograms
+  - implement MinMaxNormaliser
+  - implement the Preprocessing Pipeline
+  - implement Saver
