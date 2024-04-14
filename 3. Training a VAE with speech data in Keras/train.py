@@ -7,6 +7,7 @@ BATCH_SIZE = 64
 #20 -> 100 epochs
 EPOCHS = 150
 
+
 SPECTROGRAMS_PATH = r"D:\personal projects\Music Generation\sound data\SPECTROGRAMS_SAVE_DIR"
 
 
@@ -25,7 +26,6 @@ def load_fsdd(spectrograms_path):
     x_train = x_train[..., np.newaxis] # np.newaxis is used to increase the dimensionality of an array by one unit. # -> (3000 # of data we have in dataset, 256 num bins, 64 frames, 1) # treat spectrograms as grey scale images.
     return x_train
 
- 
 
 
 
