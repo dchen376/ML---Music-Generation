@@ -45,3 +45,5 @@ step 4 - Sound Generation with VAE
 
 # Run this Sound Generative Model
   - parameters and weights of the trained model in step 3 is saved in the model folder
+  - use the FSDD as the data for sound generation
+  - download and use step 4 folder as this is the final step and contains the final version of the files for running the model
