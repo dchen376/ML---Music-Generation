@@ -4,7 +4,7 @@ import librosa
 
 class SoundGenerator:
     """SoundGenerator is responsible for generating audios from
-    spectrograms (final step!).
+    spectrograms.
     """
 
     def __init__(self, vae, hop_length):

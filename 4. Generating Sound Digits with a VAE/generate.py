@@ -14,9 +14,6 @@ SAVE_DIR_ORIGINAL = r"D:\personal projects\Music Generation\samples\SAVE_DIR_ORI
 SAVE_DIR_GENERATED = r"D:\personal projects\Music Generation\samples\SAVE_DIR_GENERATED"
 MIN_MAX_VALUES_PATH = r"D:\personal projects\Music Generation\samples\MIN_MAX_VALUES_SAVE_DIR\min_max_values.pkl"
 
-"""
-This file is used to generate and save the spectrograms gotten from the FSDD
-"""
 
 def load_fsdd(spectrograms_path):
     x_train = [] #an empty list to be filled with spectrograms.
